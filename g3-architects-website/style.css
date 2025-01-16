@@ -7,7 +7,10 @@
   font-style: normal;
 }
 /* shared styles */
-
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .dark-1 {
   color: #131313;
 }
@@ -16,6 +19,9 @@
 }
 .dark-3 {
   color: #727272;
+}
+.orange {
+  color: #ff900e;
 }
 .brand {
   font-size: 30px;
@@ -82,7 +88,25 @@ header {
 }
 .hero-img {
   width: 100%;
+  margin-bottom: 20px;
 }
+.team-img img {
+  max-width: 14rem;
+}
+.team-and-feature {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.team-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.feature-title {
+  font-size: 1.9rem;
+}
+
 /* responsive */
 @media screen and (max-width: 576px) {
   .nav-bar {
