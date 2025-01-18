@@ -97,11 +97,18 @@ header {
   display: flex;
   gap: 3rem;
   align-items: center;
+  margin-top: 3.5rem;
 }
 .team-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 1.005rem;
+}
+.our-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  align-items: flex-start;
 }
 .feature-title {
   font-size: 1.9rem;
@@ -112,5 +119,18 @@ header {
   .nav-bar {
     flex-direction: column;
     gap: 20px;
+  }
+  .team-and-feature {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .our-features {
+    align-items: center;
+    text-align: center;
+  }
+  .team-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.005rem;
   }
 }
