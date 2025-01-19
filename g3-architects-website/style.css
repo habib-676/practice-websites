@@ -98,6 +98,7 @@ header {
   gap: 3rem;
   align-items: center;
   margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .team-img {
   display: grid;
@@ -112,6 +113,55 @@ header {
 }
 .feature-title {
   font-size: 1.9rem;
+}
+
+/* some-features section styles */
+.some-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.feature-content > h1 {
+  border-left: #ff900e 5px solid;
+  padding: 0.8rem;
+  margin-bottom: 15px;
+}
+.feature-content > p {
+  margin-bottom: 15px;
+}
+
+.feature-card > p {
+  margin-top: 12px;
+}
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-card {
+  padding: 20px;
+  border: none;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 14px;
+  border-radius: 6px;
+}
+
+.exp-badge {
+  background-color: #ff900e;
+  border: none;
+  border-radius: 7px;
+  padding: 30px 28px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: -100px;
+  margin-left: -60px;
+}
+.exp-badge > p {
+  font-size: 2.65rem;
+  font-weight: bold;
 }
 
 /* responsive */
@@ -132,5 +182,19 @@ header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.005rem;
+  }
+  .some-features {
+    flex-direction: column;
+    text-align: left;
+    max-width: 576px;
+  }
+  .exp-badge {
+    margin: 10px 0 0 0;
+  }
+  .experience-box > img {
+    max-width: 100%;
+  }
+  .experience-box {
+    text-align: center;
   }
 }
