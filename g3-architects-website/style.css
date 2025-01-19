@@ -163,7 +163,33 @@ header {
   font-size: 2.65rem;
   font-weight: bold;
 }
-
+/* fact-section-styles */
+.some-facts {
+  margin-top: 87px;
+  margin-bottom: 120px;
+}
+.some-facts > p {
+  margin: 16px 0 67px 0;
+}
+.fact-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 35px 0 35px;
+}
+.fact-box {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff900e;
+  text-align: center;
+  border-radius: 8px;
+}
+.fact-box h2 {
+  margin: 6.7px 0 10px 0;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
   .nav-bar {
@@ -196,5 +222,15 @@ header {
   }
   .experience-box {
     text-align: center;
+  }
+  /* facts */
+  .some-facts {
+    text-align: center;
+  }
+  .fact-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
