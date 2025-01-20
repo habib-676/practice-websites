@@ -50,8 +50,12 @@ header {
   display: flex;
   gap: 1.87rem;
 }
-.right-nav i {
+.right-nav i,
+.menu i {
   font-size: 1.5rem;
+}
+.menu {
+  display: none;
 }
 .right-nav a {
   text-decoration: none;
@@ -92,6 +96,9 @@ header {
   width: 400px;
 }
 /* sponsors */
+.sponsors-container img {
+  width: 100%;
+}
 .sponsors-container {
   padding: 2rem 4rem;
   display: grid;
@@ -99,4 +106,33 @@ header {
   align-items: center;
   gap: 3.33rem;
   border: 1px solid rgba(96, 96, 96, 0.37);
+  margin-bottom: 5.56rem;
+}
+
+/* responsive section */
+@media screen and (max-width: 576px) {
+  .menu {
+    display: inline;
+  }
+  .right-nav a {
+    display: none;
+  }
+  /* hero section */
+  .banner {
+    flex-direction: column-reverse;
+    background-position: top;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 1.56rem;
+    line-height: 2rem;
+  }
+  /* sponsors */
+  .sponsors-container {
+    border: none;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+    column-gap: 1.72rem;
+    row-gap: 1rem;
+  }
 }
