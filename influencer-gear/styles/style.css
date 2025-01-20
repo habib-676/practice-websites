@@ -6,8 +6,11 @@
   font-weight: 400;
   font-style: normal;
 }
-
+:root {
+  --dark-2: rgba(58, 58, 58, 1);
+}
 /* shared style */
+
 .font-inter {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -18,5 +21,71 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+.btn-primary {
+  background-color: rgba(224, 44, 109, 1);
+  color: white;
+  font-size: 0.89rem;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 40px;
+}
+.des-primary {
+  color: var(--dark-2);
+  font-size: 0.89rem;
+  font-weight: 500;
+}
 /* nav styles */
+header {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.brand {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 21px;
+}
+.right-nav {
+  display: flex;
+  gap: 1.87rem;
+}
+.right-nav i {
+  font-size: 1.5rem;
+}
+.right-nav a {
+  text-decoration: none;
+  color: var(--dark-2);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.nav-bar {
+  margin-top: 65px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* banner */
+.hero-title {
+  color: var(--dark-2);
+  font-size: 2.89rem;
+  font-weight: bold;
+  line-height: 3.89rem;
+  margin-bottom: 0.89rem;
+}
+.banner-contents > button {
+  margin-top: 1rem;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/influencer-gear/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+.banner img {
+  width: 400px;
+}
