@@ -108,7 +108,61 @@ header {
   border: 1px solid rgba(96, 96, 96, 0.37);
   margin-bottom: 5.56rem;
 }
+/* collection section */
+.collection > h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.55rem;
+  font-weight: bold;
+  color: rgba(58, 58, 58, 1);
+}
 
+.card-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  justify-content: center;
+  margin-bottom: 5.56rem;
+}
+.see-more {
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: bold;
+  font-size: 0.89rem;
+  transform: translateX(900px);
+}
+/* cards */
+.cards {
+  padding: 15px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  width: 280px;
+  border-radius: 5px;
+}
+.cards > img {
+  width: 270px;
+  margin-bottom: 0.89rem;
+}
+.card-title {
+  font-size: 1.56rem;
+  line-height: 2.22rem;
+  font-weight: 500;
+}
+.price {
+  font-size: 22px;
+  margin: 5px 0;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ratings {
+  color: rgba(94, 99, 102, 1);
+  font-size: small;
+}
+.card-des {
+  font-size: 12px;
+  font-weight: bold;
+  width: 175px;
+  color: rgba(120, 120, 133, 1);
+}
 /* responsive section */
 @media screen and (max-width: 576px) {
   .menu {
@@ -134,5 +188,10 @@ header {
     /* grid-template-rows: repeat(2,1fr); */
     column-gap: 1.72rem;
     row-gap: 1rem;
+  }
+
+  /* cards */
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
