@@ -81,6 +81,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 7.39rem;
   background-image: url(/influencer-gear/images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
